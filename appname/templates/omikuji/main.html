@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+    <head>
+        <title>おみくじプログラム</title>
+		<meta charset="utf-8">
+		 <link rel="stylesheet" href="{% static 'css/myapp.css' %}">
+	</head>
+    <body>
+		<div id=title align="center">
+			<div id=star1>★</div>
+			おみくじプログラム
+			<div id=star2>★</div>
+		</div>
+
+		<div id=main align="center">
+
+			<div id=pre>今回の結果は…</div>
+			<br><br>
+			<div id=result>
+				{{result}}
+			</div>
+			<div id=resultsentence>
+				{{sentence}}
+			</div>
+			<br><br>
+			<div id=button align="center">
+				<a href="">
+					<div id=buttonA align="center">
+						<div id=buttonB>
+							もう一度
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+    </body>
+</html>

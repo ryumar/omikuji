@@ -1,0 +1,172 @@
+body {
+	margin-top: 4%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+	margin-left: 10%;
+	background: #ddf;
+}
+
+#title {
+	border: outset 20px brown;
+	background: #841;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#pre {
+	font-size: 40pt;
+	color: white;
+	animation: fadeout 5s linear 0s 1 normal;
+}
+
+#result {
+	font-size: 60pt;
+	color: red;
+	animation: fadein 5s linear 0s 1 normal;
+}
+
+#resultsentence {
+	font-size: 20pt;
+	color: black;
+	animation: fadeins 6s linear 0s 1 normal;
+}
+
+#main {
+	border: ridge 20px brown;
+	padding:20px;
+	background: white;
+}
+
+#main a {
+	text-decoration: none;
+}
+
+#buttonA {
+	width: 300px;
+	height: auto;
+	background: #444;
+	transition: all 200ms 0s ease-in;
+}
+
+#buttonA:hover {
+	background: #e44;
+	width: 100%;
+	height: 100px;
+}
+
+#buttonB {
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30pt;
+}
+
+#star1 {
+	color: #ee0;
+	display:inline-block;
+	animation: rotation1 3s linear 0s infinite normal;
+}
+
+#star2 {
+	color: #ee0;
+	display:inline-block;
+	animation: rotation2 3s linear 0s infinite normal;
+}
+
+@keyframes rotation1 {
+  0% {
+    transform: scale(1);
+  }
+  
+  25% {
+    transform: scale(1) rotate(90deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(180deg);
+  }
+  
+  75% {
+    transform: scale(1) rotate(270deg);
+  }
+  
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: scale(1);
+  }
+  
+  25% {
+    transform: scale(1) rotate(270deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(180deg);
+  }
+  
+  75% {
+    transform: scale(1) rotate(90deg);
+  }
+  
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    color: black;
+  }
+  
+  40% {
+    color: black;
+  }
+  
+  50% {
+    color: white;
+  }
+  
+  100% {
+    color: white;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    color: white;
+  }
+  
+  50% {
+    color: white;
+  }
+  
+  60% {
+    color: red;
+  }
+  
+  100% {
+    color: red;
+  }
+}
+
+@keyframes fadeins {
+  0% {
+    color: white;
+  }
+  
+  50% {
+    color: white;
+  }
+  
+  60% {
+    color: black;
+  }
+  
+  100% {
+    color: black;
+  }
+}
